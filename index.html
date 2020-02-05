@@ -35,19 +35,19 @@
 <div class="container-fluid">
 
   <div class="navDownButton">
-    <a class="navDownLink" href="#">Login</a>
-    <a class="navDownLink b2" href="#">Register</a>
+    <a class="navDownLink color1" id="but1" onclick="login()" href="#">Login</a>
+    <a class="navDownLink b2 color2" id="but2" onclick="register()" href="#">Register</a>
   </div>
   <hr><br>
 
-  <div class="row">
+  <div class="row" id="form1">
 
     <div class="col-md-7 jumbotron c1">
 
     </div>
 
     <div class="col-md-5">
-      <form>
+      <form id="display1">
   <div class="form-group">
     <label for="exampleInputEmail1">Mobile Number / Email id</label>
     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Mobile Number / Email id">
@@ -78,8 +78,85 @@
   </div>
   <button type="submit" class="btn btn-lg submitFacebook"><a href="#" class="fa fa-facebook"></a>Connect with Facebook</button>
 </form>
+<form id="display2" class="display">
+<div class="form-group">
+<label for="exampleInputEmail1">Full Name *</label>
+<input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Full Name" required>
+</div>
+<div class="form-group">
+<label for="exampleInputPassword1">Email *</label>
+<input type="email" class="form-control" id="exampleInputPassword1" placeholder="Email" required>
+</div>
+<div class="form-group">
+<label for="exampleInputPassword1">Create Password *</label>
+<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" required>
+</div>
+<div class="form-group">
+<label for="exampleInputPassword1">Mobile Number *</label>
+<input type="number" class="form-control" id="exampleInputPassword1" placeholder="Mobile Number" required>
+</div>
+<div class="form-check">
+<label>
+<input type="checkbox" name="check" checked> <span class="label-text">Receive relevent offers and promotional communication from GroupofDoctor</span>
+</label>
+</div>
+
+
+<button type="submit" class="btn btn-lg submitButton" onclick="registerdone()">Register</button>
+<span class="agree">By signing up. I agree to <span class="terms">terms</span></span>
+</form>
     </div>
   </div>
+
+  <form class="display" id="form2">
+    <h2>Clinic/Hospital Details</h2>
+    <hr>
+  <div class="form-row">
+    <div class="form-group col-md-4">
+      <label for="inputEmail4">Clinic/Hospital Details</label>
+      <input type="text" class="form-control" id="inputEmail4">
+    </div>
+    <div class="form-group col-md-4">
+      <label for="inputPassword4">Establishment day of Clinic/Hospital</label>
+      <input type="text" class="form-control" id="inputPassword4">
+    </div>
+    <div class="form-group col-md-4">
+      <label for="inputPassword4">Country</label>
+      <input type="text" class="form-control" id="inputPassword4">
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-4">
+      <label for="inputEmail4">State/Country or Province</label>
+      <input type="text" class="form-control" id="inputEmail4">
+    </div>
+    <div class="form-group col-md-4">
+      <label for="inputPassword4">City or Town</label>
+      <input type="text" class="form-control" id="inputPassword4">
+    </div>
+    <div class="form-group col-md-4">
+      <label for="inputPassword4">Post Code/ZIP</label>
+      <input type="number" class="form-control" id="inputPassword4">
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-4">
+      <label for="inputEmail4">Landmark</label>
+      <input type="text" class="form-control" id="inputEmail4">
+    </div>
+    <div class="form-group col-md-4">
+      <label for="inputPassword4">Clinic/Hospital Address Line 1</label>
+      <input type="text" class="form-control" id="inputPassword4">
+    </div>
+    <div class="form-group col-md-4">
+      <label for="inputPassword4">Clinic/Hospital Address Line 2</label>
+      <input type="text" class="form-control" id="inputPassword4">
+    </div>
+  </div>
+
+</form>
+
+
   <hr>
   <div class="container">
   <h5>Have a question?</h5>
